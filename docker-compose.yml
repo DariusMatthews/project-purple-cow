@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  client:
+    volumes:
+      - type: volume
+        source: node_modules
+        target: /app/node_modules
+      - type: volume
+        source: public
+        target: /app/public
+      - type: volume
+        source: cache
+        target: /app/.cache
+      - type: bind
+        source: .
+        target: /app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+volumes:
+  node_modules:
+  public:
+  cache:

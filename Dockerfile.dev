@@ -1,0 +1,19 @@
+FROM node:14.16.0-alpine3.12
+
+RUN \
+  apk add --no-cache python3 make g++ && \
+  apk add vips-dev vips fftw-dev --update-cache \
+  --repository http://dl-3.alpinelinux.org/alpine/edge/community \
+  --repository http://dl-3.alpinelinux.org/alpine/edge/main \
+ && rm -fR /var/cache/apk/*
+RUN apk add automake autoconf libtool nasm
+
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install
+
+ENV NODE_ENV=development
+ENV CHOKIDAR_USEPOLLING=true
+ENV GATSBY_WEBPACK_PUBLICPATH=/
+
+CMD ["npm", "run", "develop"]
