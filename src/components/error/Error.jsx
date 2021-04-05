@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Error.module.css';
+import React from "react"
+import styles from "./Error.module.css"
 
 /**
  * @name error
@@ -8,6 +8,6 @@ import styles from './Error.module.css';
  * @param {String} message error string
  * @returns an error message
  */
-const Error = ({ message }) => <span className={styles.error}>{message}</span>;
+const Error = ({ message }) => <span className={styles.error}>{message}</span>
 
-export default Error;
+export default Error

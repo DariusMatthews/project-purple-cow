@@ -1,10 +1,13 @@
 # Project Purple Cow
+
 Created By: Darius Matthews
 
 ## Description
+
 "Project Purple Cow" is a counting application the serves as a proof of concept that supports the customers public health and social justice initiatives.
 
 ## Prerequisites
+
 To run this application you will need to have Git, Node, and Docker installed on your local computer.
 
 [Download Git](https://git-scm.com/downloads)
@@ -14,6 +17,7 @@ To run this application you will need to have Git, Node, and Docker installed on
 [Download Docker](https://docs.docker.com/get-docker/)
 
 ## Configuration
+
 In order to change the port that this application is served on, you must go into the docker-compose.yml file and change both port values:
 
 ```
@@ -28,7 +32,8 @@ After changing those values, you then have to set the same port in the package.j
 ```
 
 ## Build & Run
+
 To run the application, open a terminal and navigate to the project's root directory. Once in the root directory, run:
-```docker-compose up --build```
+`docker-compose up --build`
 
 ## Future updates & changes

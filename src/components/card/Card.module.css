@@ -1,0 +1,16 @@
+.container {
+  border-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+  border-color: #e4b5cb;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-evenly;
+  margin: 2rem 1.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-width: 320px;
+}
