@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Results.module.css"
+import * as styles from "./Results.module.css"
 
 /**
  * @name Results

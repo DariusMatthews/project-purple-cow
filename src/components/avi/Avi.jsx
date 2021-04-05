@@ -1,9 +1,9 @@
 import React from "react"
-import styles from "./Avi.module.css"
+import * as styles from "./Avi.module.css"
 
 const Avi = ({ image }) => (
-  <div className={styles.circle}>
-    <img src={image} alt="AVI" />
+  <div className={styles.container}>
+    <img className={styles.image} src={image} alt="AVI" />
   </div>
 )
 

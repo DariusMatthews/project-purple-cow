@@ -1,3 +1,7 @@
-.circle {
+.container {
+  width: 200px;
+}
+
+.image {
   border-radius: 50%;
 }
