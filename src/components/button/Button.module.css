@@ -1,14 +1,13 @@
 .btn {
-  padding: 5px;
-  color: #fff;
+  padding: 10px;
+  color: #722ae6;
   font-weight: 600;
-  background-color: cornflowerblue;
+  background-color: #e4b5cb;
   border: solid 1px;
   border-radius: 5px;
-  border-color: rgb(51, 102, 196);
+  border-color: #4d1d99;
   width: inherit;
   max-width: 270px;
-  height: 30px;
 }
 
 .btn:hover {
@@ -16,5 +15,6 @@
 }
 
 .btn:active {
-  background-color: rgb(51, 102, 196);
+  background-color: #72294b;
+  color: #af8de7;
 }
